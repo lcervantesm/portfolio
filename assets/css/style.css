@@ -1,0 +1,445 @@
+/* 
+#1b1b1b
+#616161  
+#b22222
+*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /** ==STICKY FOOTER== **/
+  footer {
+    background-color: #1b1b1b;
+    text-align: center;
+    display: table-row;
+    height: 1px;
+  }
+  div.footer {
+    padding: 30px;
+    color: #fff;
+    height: auto;
+    border-top: 5px solid #616161;
+  }
+  span.social a {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+  span.social a:hover {
+    color: #b22222;
+  }
+  /* Globales */
+  body,
+  html {
+    font-family: "Montserrat", sans-serif;
+    color: #1b1b1b;
+    display: table;
+    height: 100%;
+    width: 100%;
+    background: #f2f2f2;
+  }
+  .m10 {
+    margin: 10px 0 10px 0;
+  }
+  .justify{
+    text-align: justify;
+  }
+  .btn {
+    background: #1b1b1b;
+    border: 1px solid #1b1b1b;
+    box-shadow: none;
+  }
+  .btnFab{
+    background: #b22222;
+  }
+  .btnFab i{
+    color: #f2f2f2;
+    transition: all 0.3s ease;
+  }
+  .btnFab:hover{
+    background: #1b1b1b
+  }
+  .btnFab:hover i{
+    background: #1b1b1b;
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+  }
+  .parallax-container {
+    height: 300px;
+  }
+  .btn-transparent:hover {
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    background: transparent;
+  }
+  .btn-transparent2:hover {
+    color: #1b1b1b;
+    border: 1px solid #1b1b1b;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+  .btn-transparent2:hover i{
+    color: #1b1b1b;
+    transition: all 0.3s ease;
+  }
+  .btn i {
+    transition: all 0.3s ease;
+  }
+  .btn:hover i {
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+  }
+  h1.title {
+    font-size: 3.5rem;
+    position: relative;
+    padding-bottom: 20px;
+    /* border-bottom: 2px solid #616161; */
+  }
+  h1.title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20%;
+    background: #616161;
+    height: 2px;
+    /* transition: all .5s; */
+  }
+  /* Home */
+  header {
+    width: 100%;
+    height: 100vh;
+  }
+  div#particles-js {
+    background: orangered;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  div.Intro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  img.logo {
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+  }
+  p.slogan {
+    color: #f2f2f2;
+    /* font-size: 1.8rem; */
+  }
+  p.slogan span {
+    text-transform: uppercase;
+    color: #212121;
+    font-weight: 700;
+    /* font-size: 2rem; */
+  }
+  
+  /* NavBar */
+  body.sticky {
+    padding-top: 65px;
+  }
+  #navBar.sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 1px 1px 10px #616161;
+    width: 100%;
+    transition: all 0.3s ease;
+    z-index: 5;
+  }
+  #navBar {
+    padding: 3px 0;
+    transition: all 0.3s ease;
+    background: #f2f2f2;
+  }
+  div.navContainer {
+    margin: 0 auto;
+    display: table;
+  }
+  img.navLogo {
+    width: 59px;
+    display: table-cell;
+  }
+  li.navItem {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  li.navItem a {
+    color: #1b1b1b;
+    font-size: 1.3rem;
+  }
+  a.menuToggle {
+    margin-top: 12px;
+  }
+  i#menuIcon {
+    font-size: 3rem;
+    color: #1b1b1b;
+  }
+  ul#mobileMenu {
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    height: 0px;
+    transition: all 0.3s ease;
+  }
+  ul#mobileMenu.display {
+    height: 230px;
+    padding-top: 50px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+  }
+  li.navItemMobile {
+    padding: 10px;
+  }
+  li.navItemMobile a {
+    color: #1b1b1b;
+    font-size: 1.3rem;
+  }
+  
+  /* About */
+  i.hexgonIcon {
+    font-size: 3rem;
+    color: #f2f2f2;
+    display: block;
+    margin: 0 auto;
+  }
+  div.hexagonShape:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #b22222;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+  }
+  
+  div.hexagonShape {
+    margin: 30px auto;
+    width: 104px;
+    height: 60px;
+    background-color: #b22222;
+    position: relative;
+  }
+  
+  div.hexagonShape:after {
+    content: '';
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid #b22222;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+  }
+  
+  div.progress div.determinate{
+    background-color: #b22222;
+  }
+  
+  /* Parallax-ish */
+  section.parallax-container{
+    background: linear-gradient(rgba(178, 34, 34, 0.6),
+              rgba(178, 34, 34, 0.6)),
+                url(../img/bg-code.min.jpg);
+    background-attachment: fixed;
+    height: 250px;
+    position: relative;
+  }
+  p.quote{
+    color: #f2f2f2;
+    margin: 0 auto;
+    font-style: italic; 
+  }
+  p.qouteFooter{
+    color: #f2f2f2;
+    text-align: right;
+    margin-top: 20px;
+  }
+  /* Portfolio */
+  span.greyTitle{
+    color: #1b1b1b !important;
+  }
+  span.whiteTitle{
+    color: #f2f2f2 !important;
+  }
+  .cards-container .card {
+    display: inline-block;
+    overflow: visible;
+    display: flex;
+  }
+  /* Media Queries */
+  @media only screen and (max-width: 600px) {
+    div.navContainer {
+      width: 90%;
+    }
+    a.menuToggle {
+      display: block;
+    }
+  }
+  @media only screen and (min-width: 601px) {
+    div.navContainer {
+      width: 85%;
+    }
+    a.menuToggle {
+      display: block;
+    }
+  }
+  @media only screen and (min-width: 993px) {
+    div.navContainer {
+      width: 70%;
+      position: relative;
+    }
+    ul#dtpMenu{
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    a.menuToggle {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    div.navContainer {
+      width: 70%;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 360px) {
+    .flowText {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media only screen and (min-width: 360px) {
+    .flowText {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media only screen and (min-width: 390px) {
+    .flowText {
+      font-size: 1.224rem;
+    }
+  }
+  
+  @media only screen and (min-width: 420px) {
+    .flowText {
+      font-size: 1.248rem;
+    }
+  }
+  
+  @media only screen and (min-width: 450px) {
+    .flowText {
+      font-size: 1.272rem;
+    }
+  }
+  
+  @media only screen and (min-width: 480px) {
+    .flowText {
+      font-size: 1.296rem;
+    }
+  }
+  
+  @media only screen and (min-width: 510px) {
+    .flowText {
+      font-size: 1.32rem;
+    }
+  }
+  
+  @media only screen and (min-width: 540px) {
+    .flowText {
+      font-size: 1.344rem;
+    }
+  }
+  
+  @media only screen and (min-width: 570px) {
+    .flowText {
+      font-size: 1.368rem;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .flowText {
+      font-size: 1.392rem;
+    }
+  }
+  
+  @media only screen and (min-width: 630px) {
+    .flowText {
+      font-size: 1.416rem;
+    }
+  }
+  
+  @media only screen and (min-width: 660px) {
+    .flowText {
+      font-size: 1.44rem;
+    }
+  }
+  
+  @media only screen and (min-width: 690px) {
+    .flowText {
+      font-size: 1.464rem;
+    }
+  }
+  
+  @media only screen and (min-width: 720px) {
+    .flowText {
+      font-size: 1.474rem;
+    }
+  }
+  
+  @media only screen and (min-width: 750px) {
+    .flowText {
+      font-size: 1.476rem;
+    }
+  }
+  
+  @media only screen and (min-width: 780px) {
+    .flowText {
+      font-size: 1.478rem;
+    }
+  }
+  
+  @media only screen and (min-width: 810px) {
+    .flowText {
+      font-size: 1.480rem;
+    }
+  }
+  
+  @media only screen and (min-width: 840px) {
+    .flowText {
+      font-size: 1.482rem;
+    }
+  }
+  
+  @media only screen and (min-width: 870px) {
+    .flowText {
+      font-size: 1.484rem;
+    }
+  }
+  
+  @media only screen and (min-width: 900px) {
+    .flowText {
+      font-size: 1.486rem;
+    }
+  }
+  
+  @media only screen and (min-width: 930px) {
+    .flowText {
+      font-size: 1.488rem;
+    }
+  }
+  
+  @media only screen and (min-width: 960px) {
+    .flowText {
+      font-size: 1.5rem;
+    }
+  }
